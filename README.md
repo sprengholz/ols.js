@@ -26,7 +26,7 @@ y = math.matrix([
       [270.3]
     ])
 ```
-Calculate the regression by instantaiting ols with both X and y:
+Calculate the regression by instantiating ols with both X and y:
 ```javascript
 const result = new ols(X, y);
 ```
