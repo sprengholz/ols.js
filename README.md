@@ -4,6 +4,7 @@ ols.js provides a Javascript implementation for ordinary least squares (OLS) reg
 ols.js requires two additional libraries:
 - [math.js](https://github.com/josdejong/mathjs) (for matrix calculations)
 - [jstat.js](https://github.com/jstat/jstat) (for significance testing)
+
 After importing them, you need to create arrays holding the X and y values. If you want to include a constant intercept, provide it using a column of ones. For instance, if there are two predictors and 7 measurements, X should include 3 columns and 7 rows:
 ```javascript
 X = math.matrix([
@@ -38,6 +39,6 @@ tStats = result.getTStats());
 pValues = result.getPValues());
 stdErrors = result.getStdErrors());
 
-// returning a single number
+//returning a single number
 R2  = result.getR2());
 ```
