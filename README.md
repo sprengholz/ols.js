@@ -1,5 +1,5 @@
 # ols.js
-ols.js provides a Javascript implementation for ordinary least squares (OLS) regressions. It calculared test statistics, p-values, standard errors and the coefficient of determination (R²) for a given set of predictors X and a dependent variable y.
+ols.js provides a Javascript implementation for ordinary least squares (OLS) regressions. It calculates test statistics, p-values, standard errors and the coefficient of determination (R²) for a given set of predictors X and a dependent variable y.
 ## Usage
 ols.js requires two additional libraries:
 - [math.js](https://github.com/josdejong/mathjs) (for matrix calculations)
@@ -31,7 +31,7 @@ Calculate the regression by instantiating ols with both X and y:
 ```javascript
 const result = new ols(X, y);
 ```
-Afterwards you can access the results by calling the respective functions for beta estimates, standard errors, t- and p-values as well as the coefficient of determination.
+Afterwards you can access the results by calling the respective functions for beta estimates, standard errors, t- and p-values as well as the coefficient of determination:
 ```javascript
 //each returning an array of numbers
 betaEstimates = result.getBetaEstimates();
